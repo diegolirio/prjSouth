@@ -9,4 +9,10 @@ class Pessoa(models.Model):
 	cpf_cnpj = models.CharField(max_length=20)
 	endereco = models.ForeignKey(Endereco)
 	
-
+class Funcionario(Pessoa):
+	matricula = models.IntegerField()
+	#data_admissao = 
+	#salario = 
+	
+class Cliente(Pessoa):
+	ie = models.IntegerField()	

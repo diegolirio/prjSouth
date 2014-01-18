@@ -20,7 +20,7 @@ class Telefone(models.Model):
 class Funcionario(Pessoa):
 	matricula = models.IntegerField()
 	#data_admissao = 
-	#salario = 
+	salario = models.DecimalField(max_digits=10, decimal_places=2)
 	
 class Cliente(Pessoa):
 	ie = models.IntegerField()	
